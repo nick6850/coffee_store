@@ -23,7 +23,8 @@ const SignUp = observer(() => {
   }
 
   const onFinishFailed = (errorInfo) => {
-    setErrorMessage(errorInfo);
+    console.log("Failed:", errorInfo);
+    setErrorMessage("Заполните все поля формы");
   };
 
   return (
@@ -80,7 +81,7 @@ const SignUp = observer(() => {
           />
         )}
         <p style={{ textAlign: "center" }}>
-          Уже есть аккаунт? <Link to="/login">Войдите здесь</Link>
+          Уже есть аккаунт? Войдите <Link to="/login">здесь</Link>.
         </p>
       </Form>
     </div>

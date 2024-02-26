@@ -37,6 +37,11 @@ const Login = observer(() => {
               required: true,
               message: "Пожалуйста, введите ваше имя пользователя!",
             },
+            {
+              min: 3,
+              message:
+                "Имя пользователя должно быть длиной не менее 3 символов!",
+            },
           ]}
         >
           <Input placeholder="Имя пользователя" />
@@ -45,6 +50,10 @@ const Login = observer(() => {
           name="password"
           rules={[
             { required: true, message: "Пожалуйста, введите ваш пароль!" },
+            {
+              min: 3,
+              message: "Пароль должен быть длиной не менее 3 символов!",
+            },
           ]}
         >
           <Input.Password placeholder="Пароль" />
