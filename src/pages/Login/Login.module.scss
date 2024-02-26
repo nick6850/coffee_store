@@ -1,0 +1,27 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.loginForm {
+  max-width: 400px;
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 576px) {
+    padding: 1rem;
+  }
+
+  .loginButton {
+    width: 100%;
+  }
+
+  .registerLink {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
