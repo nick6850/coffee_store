@@ -1,0 +1,25 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(41, 39, 39);
+}
+
+.form {
+  max-width: 400px;
+  width: 100%;
+  padding: 2em;
+  padding-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 576px) {
+    padding: 1rem;
+  }
+}
