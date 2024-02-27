@@ -26,6 +26,11 @@ class UserStore {
         "Имя пользователя и пароль должны быть длиннее 3 символов"
       );
     }
+
+    localStorage.removeItem("user");
+    localStorage.removeItem("basket");
+    localStorage.removeItem("purchaseHistory");
+
     localStorage.setItem("user", JSON.stringify(user));
     this.user = user;
     this.isSignedIn = true;
@@ -44,8 +49,6 @@ class UserStore {
   signOut() {
     this.user = null;
     this.isSignedIn = false;
-    localStorage.removeItem("user");
-    localStorage.removeItem("basket");
   }
 }
 
