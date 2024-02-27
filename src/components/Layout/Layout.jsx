@@ -54,14 +54,6 @@ const AppLayout = observer(() => {
       ),
     },
     {
-      key: "basket",
-      label: (
-        <Link to="/basket">
-          <ShoppingCartOutlined /> Корзина
-        </Link>
-      ),
-    },
-    {
       key: "logout",
       label: (
         <Link onClick={onLogoutClick} to={"/signup"}>
@@ -79,11 +71,16 @@ const AppLayout = observer(() => {
         </Link>
         <div className={styles.navLinks}>
           {isMobile ? (
-            <Dropdown menu={{ items: menuItems }} trigger={["click"]}>
-              <a onClick={(e) => e.preventDefault()}>
-                <MoreOutlined className={styles.dropdownIcon} />
-              </a>
-            </Dropdown>
+            <div className={styles.mobileNav}>
+              <Link to="/basket" className={styles.basket}>
+                <ShoppingCartOutlined className={styles.basketIcon} /> Корзина
+              </Link>
+              <Dropdown menu={{ items: menuItems }} trigger={["click"]}>
+                <a onClick={(e) => e.preventDefault()}>
+                  <MoreOutlined className={styles.dropdownIcon} />
+                </a>
+              </Dropdown>
+            </div>
           ) : authStore.isSignedIn ? (
             <>
               <Link to="/basket" className={styles.basket}>
@@ -99,7 +96,7 @@ const AppLayout = observer(() => {
             </>
           ) : (
             <Link to="/login">
-              <LoginOutlined /> Войти в профиль
+              <LoginOutlined /> Login
             </Link>
           )}
         </div>
