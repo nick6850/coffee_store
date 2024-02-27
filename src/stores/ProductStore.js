@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import products from "../data/products";
+import products from "../assets/data/products";
 
 class ProductStore {
   products = products;
