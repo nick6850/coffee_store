@@ -30,7 +30,6 @@ class ProductStore {
 
   resetFilters() {
     this.filteredProducts = this.products;
-    this.sortByPrice(this.currentSortDirection);
   }
 }
 

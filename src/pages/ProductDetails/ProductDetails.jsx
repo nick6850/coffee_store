@@ -39,7 +39,7 @@ const ProductDetails = observer(() => {
 
   const handleAddToBasket = () => {
     basketStore.addProduct(product);
-    message.success(`${product.name} уже в твоей корзине!`, 5);
+    message.success(`Добавили ${product.name} в корзину :)`, 5);
   };
 
   return (
