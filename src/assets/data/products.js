@@ -45,7 +45,7 @@ const products = [
   {
     id: 6,
     name: "Portable Maker",
-    description: "Приготовьте свой кофе везде, где вы находитесь.",
+    description: "Поможет приготовить кофе на пикнике или в горах.",
     price: 50.0,
     category: "Кофемашины",
     img: "product_6.jpg",
@@ -68,7 +68,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Coffee Mug",
+    name: "Стильная кружка",
     description: "Стильная кружка для вашего ежедневного кофе.",
     price: 10.0,
     category: "Другое",
