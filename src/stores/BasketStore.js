@@ -7,6 +7,15 @@ class BasketStore {
     makeAutoObservable(this);
   }
 
+  loadBasket() {
+    const basket = JSON.parse(localStorage.getItem("basket")) || [];
+    this.selectedProducts = basket;
+  }
+
+  saveBasket() {
+    localStorage.setItem("basket", JSON.stringify(this.selectedProducts));
+  }
+
   addProduct(product) {
     const existingProduct = this.selectedProducts.find(
       (p) => p.id === product.id
@@ -16,6 +25,7 @@ class BasketStore {
     } else {
       this.selectedProducts.push({ ...product, quantity: 1 });
     }
+    this.saveBasket();
   }
 
   removeProduct(productId) {
@@ -31,6 +41,7 @@ class BasketStore {
         );
       }
     }
+    this.saveBasket();
   }
 
   calculateTotalPrice() {
@@ -46,6 +57,7 @@ class BasketStore {
 
   clearBasket() {
     this.selectedProducts = [];
+    localStorage.removeItem("basket");
   }
 }
 
