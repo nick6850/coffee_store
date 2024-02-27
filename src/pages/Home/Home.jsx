@@ -29,7 +29,7 @@ const Home = observer(() => {
 
   const handleAddToBasket = (product) => {
     basketStore.addProduct(product);
-    message.success(`Добавили ${product.name} в корзину :)`, 5);
+    message.success(`Добавили ${product.name} в корзину :)`, 2);
   };
 
   const handleResetFilters = () => {
