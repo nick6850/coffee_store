@@ -45,6 +45,7 @@ class UserStore {
     this.user = null;
     this.isSignedIn = false;
     localStorage.removeItem("user");
+    localStorage.removeItem("basket");
   }
 }
 
