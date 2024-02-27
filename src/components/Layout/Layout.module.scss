@@ -26,6 +26,13 @@
       margin-left: 0rem;
       font-size: 1.4rem;
     }
+
+    @media (max-width: 450px) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: 410px) {
+      font-size: 0.8rem;
+    }
   }
 
   .dropdownIcon {
@@ -45,6 +52,10 @@
   a {
     color: white;
     margin: 0.3em;
+
+    &:hover {
+      text-shadow: 0 0 0.3px white;
+    }
   }
 }
 
@@ -55,6 +66,7 @@ button {
 .content {
   flex: 1;
   padding: 2rem;
+  background-color: rgba(22, 63, 50, 0.123);
 }
 
 .footer {

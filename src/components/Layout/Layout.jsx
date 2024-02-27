@@ -67,7 +67,7 @@ const AppLayout = observer(() => {
     <Layout className={styles.layout}>
       <Header className={styles.header}>
         <Link to="/" className={styles.logo}>
-          ☕ Coffee Shop
+          ☕ <span className={styles.title}>Coffee Shop</span>
         </Link>
         <div className={styles.navLinks}>
           {isMobile ? (
@@ -96,7 +96,7 @@ const AppLayout = observer(() => {
             </>
           ) : (
             <Link to="/login">
-              <LoginOutlined /> Login
+              <LoginOutlined /> Войти
             </Link>
           )}
         </div>
