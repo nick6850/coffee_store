@@ -19,6 +19,7 @@ import Checkout from "./pages/Checkout/Checkout";
 import Profile from "./pages/Profile/Profile";
 import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
+import NotFound from "./pages/NotFound/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -68,6 +69,7 @@ const router = createBrowserRouter(
 
       <Route path="signup" element={<SignUp />} />
       <Route path="login" element={<Login />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
