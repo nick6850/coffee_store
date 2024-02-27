@@ -71,16 +71,22 @@ const AppLayout = observer(() => {
         </Link>
         <div className={styles.navLinks}>
           {isMobile ? (
-            <div className={styles.mobileNav}>
-              <Link to="/basket" className={styles.basket}>
-                <ShoppingCartOutlined className={styles.basketIcon} /> Корзина
+            authStore.isSignedIn ? (
+              <div className={styles.mobileNav}>
+                <Link to="/basket" className={styles.basket}>
+                  <ShoppingCartOutlined className={styles.basketIcon} /> Корзина
+                </Link>
+                <Dropdown menu={{ items: menuItems }} trigger={["click"]}>
+                  <a onClick={(e) => e.preventDefault()}>
+                    <MoreOutlined className={styles.dropdownIcon} />
+                  </a>
+                </Dropdown>
+              </div>
+            ) : (
+              <Link to="/login" className={styles.loginMobile}>
+                <LoginOutlined /> Войти
               </Link>
-              <Dropdown menu={{ items: menuItems }} trigger={["click"]}>
-                <a onClick={(e) => e.preventDefault()}>
-                  <MoreOutlined className={styles.dropdownIcon} />
-                </a>
-              </Dropdown>
-            </div>
+            )
           ) : authStore.isSignedIn ? (
             <>
               <Link to="/basket" className={styles.basket}>

@@ -22,13 +22,13 @@
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-    @media (max-width: 768px) {
+    @media (max-width: 771px) {
       margin-left: 0rem;
       font-size: 1.4rem;
     }
 
-    @media (max-width: 450px) {
-      font-size: 1.2rem;
+    @media (max-width: 456px) {
+      font-size: 1.1rem;
     }
     @media (max-width: 410px) {
       font-size: 0.8rem;
@@ -42,7 +42,7 @@
     color: white;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 760px) {
     .basket {
       position: relative;
       bottom: 2.5px;
@@ -51,6 +51,7 @@
 
   a {
     color: white;
+    font-size: 0.8rem;
     margin: 0.3em;
 
     &:hover {
