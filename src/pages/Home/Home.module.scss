@@ -1,0 +1,53 @@
+.homeLayout {
+  height: 100%;
+  padding: 1rem;
+}
+
+.filtersHeader {
+  background: #56ae4b00;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  margin-top: -0.8rem;
+  border-radius: 5px;
+}
+
+.filterControls {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 501px) {
+  .filterControls {
+    flex-direction: column;
+  }
+}
+
+.filterSelect {
+  min-width: 100px;
+  width: max-content;
+  margin: 0.1rem;
+}
+
+.productCard {
+  height: 100%;
+  min-width: 215px;
+}
+
+.productImage {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.addToBasket {
+  margin-top: 0.2rem;
+}
