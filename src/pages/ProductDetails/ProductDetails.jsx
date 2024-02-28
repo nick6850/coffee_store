@@ -47,9 +47,7 @@ const ProductDetails = observer(() => {
       <Card
         hoverable
         className={styles.productCard}
-        cover={
-          <img alt={product.name} src={`src/assets/images/${product.img}`} />
-        }
+        cover={<img alt={product.name} src={`/assets/images/${product.img}`} />}
       >
         <Card.Meta
           title={product.name}

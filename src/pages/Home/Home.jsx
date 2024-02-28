@@ -83,7 +83,7 @@ const Home = observer(() => {
                 cover={
                   <img
                     alt={product.name}
-                    src={`src/assets/images/${product.img}`}
+                    src={`/assets/images/${product.img}`}
                     className={styles.productImage}
                   />
                 }
