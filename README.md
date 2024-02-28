@@ -14,7 +14,7 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 
 - **Связанные хранилища MobX:** `AuthStore`
 - **Функционал:** Включает регистрацию и вход пользователя.
-- **Реализует компоненты формы и ввода Ant Design** для пользовательского ввода.
+- **Использует компоненты Form и Input Ant Design** для пользовательского ввода.
 - `AuthStore` управляет аутентификацией пользователя, включая `signIn()` для входа и `signUp()` для регистрации, используя локальное хранилище для управления сессиями. Это связано с тем, что это тестовое приложение, и для простоты информация о пользователе хранится на стороне клиента, а не на сервере.
 
 ![Signup Gif](public/assets/readme/gifs/signup.gif)
@@ -28,7 +28,7 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 - **Связанные хранилища MobX:** `ProductStore`
 - **Функционал:** Демонстрация категорий продуктов и карточек товаров.
 - Использует **Select от Ant Design** для фильтрации по категориям и **компоненты карточек** для отображения продуктов.
-- **Отзывчивый дизайн** достигается с использованием **Row** и **Col от Ant Design**, обеспечивая безупречный опыт на разных устройствах.
+- **Отзывчивый дизайн** достигается с использованием **Row** и **Col от Ant Design**, обеспечивая комфортный UX на разных устройствах.
 
 ![Responsive Layout of Product Cards](public/assets/readme/gifs/responsive.gif)
 
@@ -38,9 +38,9 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 
 ### Страница ProductDetails (`/product/:id`)
 
-- **Связанные хранилища MOBX:** `ProductStore`, `BasketStore`
-- **Функционал:** Отображает подробную информацию о выбранном продукте.
-- Подробный просмотр включает изображения продуктов, цены и описания, предоставляемые `ProductStore.findById()`.
+- **Связанные хранилища MObX:** `ProductStore`, `BasketStore`
+- **Функционал:** Отображает информацию о выбранном продукте.
+- Включает изображения продуктов, цены и описания, предоставляемые `ProductStore.findById()`.
 
 ![Details Gif](public/assets/readme/gifs/details.gif)
 
@@ -56,7 +56,7 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 
 - **Связанные хранилища MobX:** `BasketStore`, `PurchaseHistoryStore`
 - **Функционал:** Облегчает завершение заказа и оплату.
-- **Использует компоненты ввода и формы от Ant Design** для сбора платежной информации.
+- **Использует компоненты Input и Form от Ant Design** для сбора платежной информации.
 
 ![Checkout Gif](public/assets/readme/gifs/checkout.gif)
 
@@ -71,7 +71,7 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 ### Страница NotFound (универсальный обработчик несуществующих маршрутов)
 
 - **Функционал:** Отображает страницу 404 Not Found для несуществующих маршрутов.
-- Реализует **компонент результатов от Ant Design** для представления сообщения об ошибке.
+- Использует **компонент Result от Ant Design** для представления сообщения об ошибке.
 
 ![Not Found Gif](public/assets/readme/gifs/not_found.gif)
 
