@@ -68,7 +68,7 @@ const SignUp = observer(() => {
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
           <Button type="primary" htmlType="submit">
-            Отправить
+            Зарегистрироваться
           </Button>
         </Form.Item>
 
