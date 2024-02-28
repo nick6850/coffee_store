@@ -20,7 +20,10 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 ## Модель ветвления
 
 В процессе работы над приложением была использована модель ветвления **GitFlow**:
-![GitFlow](public/assets/readme/other/gitflow.png)
+
+<p align="center">
+  <img src="public/assets/readme/other/gitflow.png" alt="GitFlow" width="400" />
+</p>
 
 ## Функционал
 
@@ -32,8 +35,8 @@ Live demo: [coffee-store-three.vercel.app](https://coffee-store-three.vercel.app
 - `AuthStore` управляет аутентификацией пользователя, включая `signIn()` для входа и `signUp()` для регистрации, используя локальное хранилище для управления сессиями. Это связано с тем, что это учебное приложение, и для простоты информация о пользователе хранится на стороне клиента, а не на сервере.
 
 <p align="center">
-  <img src="public/assets/readme/gifs/signup.gif" width="400" alt="Signup Gif" />
-  <img src="public/assets/readme/gifs/login.gif" width="400" alt="Login Gif" />
+  <img src="public/assets/readme/gifs/signup.gif" width=400 alt="Signup Gif" /><br>
+  <img src="public/assets/readme/gifs/login.gif" width=400 alt="Login Gif" />
 </p>
 
 - **Результат:** Успешный вход предоставляет доступ к дополнительным функциям, например, просмотру истории покупок или оформлению заказа.
