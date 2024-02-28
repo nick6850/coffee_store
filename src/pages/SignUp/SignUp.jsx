@@ -66,11 +66,11 @@ const SignUp = observer(() => {
           <Input.Password />
         </Form.Item>
 
-        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+        <Form.Item>
           <Button
-            style={{ marginLeft: "-1.25rem" }}
             type="primary"
             htmlType="submit"
+            className={styles.submitButton}
           >
             Зарегистрироваться
           </Button>

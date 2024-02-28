@@ -21,7 +21,14 @@
   padding-bottom: 1rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 576px) {
+  .submitButton {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
     padding: 1rem;
   }
 }
