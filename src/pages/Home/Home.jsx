@@ -13,7 +13,7 @@ const Home = observer(() => {
   const [selectedCategory, setSelectedCategory] = useState("Категория");
   const [selectedSort, setSelectedSort] = useState("Цена");
 
-  const categoryOptions = ["Зерна", "Кофемашины", "Другое"];
+  const categoryOptions = ["Кофе", "Кофемашины", "Другое"];
   const sortOptions = ["Возрастание", "Убывание"];
 
   const handleCategoryChange = (value) => {

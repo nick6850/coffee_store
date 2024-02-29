@@ -5,7 +5,7 @@ const products = [
     description:
       "Богатые и карамельные ноты, идеально подходят для приготовления эспрессо.",
     price: 15.99,
-    category: "Зерна",
+    category: "Кофе",
     img: "product_1.jpg",
   },
   {
@@ -13,7 +13,7 @@ const products = [
     name: "Robusta Blend",
     description: "Экзотические зерна с уникальными вкусами.",
     price: 18.99,
-    category: "Зерна",
+    category: "Кофе",
     img: "product_2.jpg",
   },
   {
@@ -21,7 +21,7 @@ const products = [
     name: "Coffee Blend",
     description: "Сбалансированная смесь из лучших зерен.",
     price: 14.99,
-    category: "Зерна",
+    category: "Кофе",
     img: "product_3.jpg",
   },
   {
